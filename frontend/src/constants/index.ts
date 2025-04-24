@@ -20,3 +20,43 @@ export const NavbarElements=[
 
     }
 ]
+export const HeroSectionContent=[
+    {
+        name:'Womans Fashion',
+        href:'/home'
+
+    },
+    {
+        name:'Mens Fashion',
+        href:'/contact'
+
+    },
+    {
+        name:'Electronics',
+        href:'/about'
+
+    },
+    {
+        name:'Home and lifeStyle',
+        href:'/singup'
+
+    },
+    {
+        name:'Medicine',
+        href:'/singup'
+
+    },
+    {
+        name:'Babys Toys',
+        href:'/singup'
+
+    }, {
+        name:'Health and beauty',
+        href:'/singup'
+
+    },
+    {
+        name:'Groceries and pets'
+    }
+
+]

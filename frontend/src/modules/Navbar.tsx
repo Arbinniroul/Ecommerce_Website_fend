@@ -73,7 +73,7 @@ const handlePopUp=()=>{
         </div>
       </div>
       { isOpen &&
-       ( <div className="shadow-xl   h-[290px] border  mx-4 px-5 py-10" >
+       ( <div className="shadow-xl   h-[290px] border  mx-4 md:mx-10 px-5 py-10" >
         <div className="flex flex-col gap-4 mb-5">
         {
             NavbarElements.map((item,index)=>(
