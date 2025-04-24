@@ -1,0 +1,22 @@
+export const NavbarElements=[
+    {
+        name:'Products',
+        href:'/products'
+
+    },
+    {
+        name:'Features',
+        href:'/features'
+
+    },
+    {
+        name:'Pricing',
+        href:'/pricing'
+
+    },
+    {
+        name:'Support',
+        href:'/support'
+
+    }
+]
