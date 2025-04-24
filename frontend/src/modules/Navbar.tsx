@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { NavbarElements } from "../constants"
 import { Button } from "../components/ui/Button"
-import {ChevronDown, Cross, CrossIcon, Delete, DeleteIcon, FlipHorizontal, FlipVertical, Globe, LucideShowerHead, Menu, SquareDashed, TrashIcon, UniversityIcon, X} from "lucide-react"
+import {ChevronDown, Cross, CrossIcon, Delete, DeleteIcon, FlipHorizontal, FlipVertical, Globe, Heart, LucideShowerHead, Menu, Search, ShoppingCart, SquareDashed, TrashIcon, UniversityIcon, X} from "lucide-react"
 
 
 const Navbar = () => {
@@ -33,10 +33,10 @@ const handlePopUp=()=>{
         </div>
        
       </div>
-      <div className="max-w-7xl">
-        <div className="flex justify-between items-center md:px-10 py-2 px-1 ">
+      <div className="max-w-7xl ">
+        <div className="flex justify-between items-center md:px-10 py-2 px-4 border-b-1 mb-3">
             <div className="text-xl font-semibold md:text-2xl tracking-tighter ">
-                Website Logo
+                Exclusive
 
             </div>
             <div className="hidden gap-10 text-gray-500 md:flex">
@@ -47,13 +47,18 @@ const handlePopUp=()=>{
             }
 
             </div>
-            <div className="flex gap-2 ">
-                <div className="py-1   text-gray-500 border border-gray-500 rounded-full  flex cursor-pointer px-5">
-                Start Free trial
- 
+            <div className="flex gap-3">
+                <div className="sm:flex hidden lg:ml:0 ml-auto bg-gray-100 px-1 items-center py-1 rounded-md">
+                    <input className=' border-none outline-none text-xs px-2 py-1' type="text" placeholder="what are you looking for.." />
+                    <Search className="size-5 text-muted-foreground"/>
+                </div>
+                <div className=" py-1 items-center gap-2 text-muted-foreground sm:flex hidden lg:ml:0 ml-auto">
+
+                    <Heart className="size-5"/>
+                    <ShoppingCart className="size-5"/>
                 </div>
                 <div className=" md:hidden flex">
-                    <Button type="button" variant='outline' onClick={handlePopUp} className='rounded-full active:bg-black active:text-white'>
+                    <Button type="button" variant='outline' onClick={handlePopUp} className={isOpen ? "bg-black text-white rounded-full ":"rounded-full"}>
                     <Menu/>
                     <X/>
                     </Button>
