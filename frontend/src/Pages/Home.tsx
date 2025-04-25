@@ -1,5 +1,7 @@
+import React from "react"
 import HeroSection from "../modules/HeroSection"
 import Navbar from "../modules/Navbar"
+import FlashSales from "../modules/FlashSales"
 
 
 const Home = () => {
@@ -7,6 +9,7 @@ const Home = () => {
     <div>
       <Navbar/>
       <HeroSection/>
+      <FlashSales/>
 
     </div>
   )

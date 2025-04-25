@@ -12,8 +12,8 @@ const handlePopUp=()=>{
   return (
     <header>
 
-      <div className=" bg-black px-4 text-xs md:text-sm">
-        <div className="max-w-7xl mx-auto">
+      <div className=" bg-black px-4 text-xs md:text-sm ">
+        <div className="max-w-7xl mx-auto ">
 
             <div className= "flex justify-between items-center text-white py-2 ">
                 <div></div>
@@ -48,7 +48,7 @@ const handlePopUp=()=>{
 
             </div>
             <div className="flex gap-3">
-                <div className="sm:flex hidden lg:ml:0 ml-auto bg-gray-100 px-1 items-center py-1 rounded-md">
+                <div className="sm:flex hidden lg:ml:0 w-full bg-gray-100 px-1 items-center py-1 rounded-md">
                     <input className=' border-none outline-none text-xs px-2 py-1' type="text" placeholder="what are you looking for.." />
                     <Search className="size-5 text-muted-foreground"/>
                 </div>
@@ -72,8 +72,10 @@ const handlePopUp=()=>{
 
         </div>
       </div>
+      <div className="relative">
+
       { isOpen &&
-       ( <div className="shadow-xl   h-[290px] border  mx-4 md:mx-10 px-5 py-10" >
+       ( <div className="absolute  shadow-xl w-100 h-[290px] border z-10 overflow-hidden   bg-gray-400 text-black mx-4 md:mx-10 px-5 py-10" >
         <div className="flex flex-col gap-4 mb-5">
         {
             NavbarElements.map((item,index)=>(
@@ -88,6 +90,8 @@ const handlePopUp=()=>{
 
 
       </div>)}
+      </div>
+
     </header>
 
   )
